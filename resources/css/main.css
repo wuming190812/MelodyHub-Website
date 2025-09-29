@@ -1,0 +1,83 @@
+/* ---------------- ROOT COLORS ---------------- */
+:root {
+    --bs-primary: #ff7e22;   /* Orange */
+    --bs-secondary: #ff4081; /* Pink */
+    --bs-dark: #111111;      /* Black */
+    --bs-gray: #1c1c1c;      /* Dark Gray */
+}
+
+/* ---------------- GLOBAL ---------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bs-dark) !important;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Section Titles */
+h2, h3, label {
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+
+/* ---------------- HEADER ---------------- */
+header, nav.navbar {
+    background-color: var(--bs-dark) !important;
+    color: white;
+}
+
+a {
+    color: var(--bs-primary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--bs-secondary);
+}
+
+.nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-item.dropdown:hover .nav-link {
+    color: var(--bs-primary) !important;
+}
+
+.dropdown-menu {
+    background-color: var(--bs-gray);
+    border-radius: 8px;
+    border: none;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    color: var(--bs-primary) !important;
+    background-color: transparent;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #ff4081, #ff562290);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Make the solid color transparent to show the gradient */
+    font-weight: 600; /* Optional: Add weight for better visibility */
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background-color: var(--bs-dark);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}

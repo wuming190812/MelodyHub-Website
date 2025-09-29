@@ -1,0 +1,226 @@
+/* ---------------- ARTIST DETAIL THEME ---------------- */
+
+/* Hero Section */
+.artist-hero {
+    background: linear-gradient(135deg, var(--bs-gray), var(--bs-dark));
+}
+.artist-name {
+    font-size: 1.8rem;
+    color: var(--bs-primary);
+}
+.artist-stats {
+    margin-top: 1rem;
+}
+.artist-stats .stat-item {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: #aaa;
+}
+.artist-stats i {
+    color: var(--bs-secondary);
+    margin-right: 6px;
+}
+
+/* Action Buttons */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-primary);
+    background: transparent;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+.action-btn:hover {
+    background: var(--bs-primary);
+    color: var(--bs-dark);
+}
+.action-btn.liked,
+.action-btn.followed {
+    background: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+    color: #fff;
+}
+
+/* Songs Table */
+.song-table {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+.song-table table {
+    margin-bottom: 0;
+    color: white;
+}
+
+.song-table thead th{
+    background: rgba(255, 126, 34, 0.2);
+    border: none;
+    padding: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+.song-table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.song-table tbody tr:hover {
+    background: rgba(255, 126, 34, 0.1);
+    transform: translateX(5px);
+}
+.song-table tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    border: none;
+}
+.song-table td {
+    border-bottom: 1px solid #222;
+    vertical-align: middle;
+}
+.song-table tr:hover td {
+    background: rgba(255, 126, 34, 0.05);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+/* Play Button */
+.play-btn {
+    background: rgba(255, 126, 34, 0.2);
+    border: 1px solid #ff7e22;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #ff7e22;
+    transition: all 0.3s ease;
+}
+.play-btn:hover {
+    background: #ff7e22;
+    color: white;
+}
+.play-btn i {
+    color: #fff;
+    font-size: 13px;
+}
+
+.share-btn{
+    background: rgba(190, 36, 80, 0.2);
+    border: 1px solid #be2450;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #be2450;
+    transition: all 0.3s ease;    
+}
+.share-btn:hover {
+    background: #be2450;
+    color: white;
+}
+.share-btn i {
+    color: #fff;
+    font-size: 13px;
+}
+
+.download-btn{
+    background: rgba(197, 99, 99, 0.2);
+    border: 1px solid #c56363;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #c56363;
+    transition: all 0.3s ease;    
+}
+.download-btn:hover {
+    background: #c56363;
+    color: white;
+}
+.download-btn i {
+    color: #fff;
+    font-size: 13px;
+}
+
+.list-btn{
+    background: rgba(171, 197, 99, 0.2);
+    border: 1px solid #abc563;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #abc563;
+    transition: all 0.3s ease;    
+}
+.list-btn:hover {
+    background: #abc563;
+    color: white;
+}
+.list-btn i {
+    color: #fff;
+    font-size: 13px;
+}
+
+/* Other Buttons (Add / Download / Share) */
+.btn-outline-light {
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+    transition: all 0.3s ease;
+}
+.btn-outline-light:hover {
+    background: var(--bs-primary);
+    color: var(--bs-dark);
+}
+
+/* Playlist Modal */
+.modal-content {
+    background-color: var(--bs-gray);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #222;
+}
+.modal-header,
+.modal-footer {
+    border-color: #333;
+}
+.btn-primary {
+    background: var(--bs-primary);
+    border: none;
+}
+.btn-primary:hover {
+    background: var(--bs-secondary);
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.modal-header, .modal-footer {
+    border-color: #333;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+        
+.song-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+        
+.song-details h6 {
+    margin: 0;
+    font-weight: 500;
+    color: white;
+}
+        
+.song-details .artist {
+    color: #ff7e22;
+    font-size: 0.85rem;
+    margin: 0;
+}

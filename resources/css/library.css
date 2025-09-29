@@ -1,0 +1,106 @@
+.text-information{
+    color:#ff6b6b !important;
+}
+/* Circle Design for Artist Images */
+.artist-circle {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #ff6b6b; /* Primary accent color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for circle and image */
+.artist-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff6b6b;
+}
+
+.artist-circle:hover img {
+    transform: scale(1.1);
+}
+
+/* Artist Name Styling */
+.artist-name {
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.artist-card:hover .artist-name {
+    color: #ff6b6b;
+}
+
+.text-muted{
+    color:#fff;
+}
+
+/* Playlist Section - Matching Artist Design */
+/* Gradient Heading */
+h2.gradient-text {
+    color:#ff6b6b !important;
+}
+
+/* Playlist Circle Design */
+.playlist-circle {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #ff6b6b; /* Match artist accent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+}
+
+.playlist-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.playlist-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff6b6b;
+}
+
+.playlist-circle:hover img {
+    transform: scale(1.1);
+}
+
+/* Playlist Name Styling */
+.artist-name {
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.artist-card:hover .artist-name,
+.playlist-circle:hover + .artist-name {
+    color: #ff6b6b;
+}
+
+/* Card Link Styling */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+

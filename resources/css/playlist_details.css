@@ -1,0 +1,173 @@
+/* ---------------- PLAYLIST DETAILS ---------------- */
+
+/* Playlist Header */
+.playlist-detail-header img.playlist-cover {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid var(--bs-primary);
+    box-shadow: 0 0 15px rgba(255, 126, 34, 0.4);
+}
+.playlist-detail-header h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Stats */
+.playlist-stats {
+    margin-top: 1rem;
+}
+.playlist-stats .stat-item {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: #aaa;
+}
+.playlist-stats i {
+    color: var(--bs-secondary);
+    margin-right: 6px;
+}
+
+/* Action Buttons (Play, Like, Follow, Delete, Back) */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-primary);
+    background: transparent;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+.action-btn:hover {
+    background: var(--bs-primary);
+    color: var(--bs-dark);
+}
+.action-btn.liked,
+.action-btn.followed {
+    background: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+    color: #fff;
+}
+.delete-btn:hover {
+    background: #e74c3c !important;
+    border-color: #e74c3c !important;
+    color: #fff !important;
+}
+.back-btn:hover {
+    background: var(--bs-primary);
+    color: #fff;
+}
+
+/* Play Button Special */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.play-btn {
+    background: rgba(255, 126, 34, 0.2);
+    border: 1px solid #ff7e22;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #ff7e22;
+    transition: all 0.3s ease;
+}
+.play-btn:hover {
+    background: #ff7e22;
+    color: white;
+}
+
+.btn-remove {
+    background: rgba(197, 99, 99, 0.2);
+    border: 1px solid #c56363;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #c56363;
+    transition: all 0.3s ease; 
+}
+
+.btn-remove:hover {
+    background: #c56363;
+    color: white;
+}
+
+.btn-remove i {
+    color: #fff;
+    font-size: 13px;
+}
+
+.tracks-table {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tracks-table th {
+    background: rgba(255, 126, 34, 0.2);
+    border: none;
+    padding: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    color: white;
+    text-align: left;
+}
+
+.tracks-table tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tracks-table tr:hover td {
+    background: rgba(255, 126, 34, 0.1);
+    transform: translateX(5px);
+}
+
+.tracks-table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border: none;
+    color: white;
+}
+
+.tracks-table .track-actions i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #ff7e22;
+}
+
+.tracks-table .track-actions i:hover {
+    color: white;
+}
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+        
+.song-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+        
+.song-details h6 {
+    margin: 0;
+    font-weight: 500;
+    color: white;
+}
+        
+.song-details .artist {
+    color: #ff7e22;
+    font-size: 0.85rem;
+    margin: 0;
+}

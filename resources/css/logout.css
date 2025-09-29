@@ -1,0 +1,71 @@
+:root {
+            --bs-primary: #ff7e22; /* Orange */
+            --bs-secondary: #ff4081; /* Pink */
+            --bs-dark: #111111; /* Black */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bs-dark); /* Dark background */
+            color: #ffffff; /* White text */
+        }
+
+        .modal-content {
+            background-color: #222222; /* Slightly lighter than dark for contrast */
+            border: none;
+            border-radius: 10px;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #444444; /* Subtle divider */
+            background: linear-gradient(45deg, var(--bs-secondary), var(--bs-primary)); /* Pink to orange gradient */
+            color: #ffffff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .modal-title {
+            font-weight: 500;
+        }
+
+        .modal-body {
+            color: #cccccc; /* Lighter gray for body text */
+            font-size: 1.1rem;
+            padding: 20px;
+        }
+
+        .modal-footer {
+            border-top: 1px solid #444444; /* Subtle divider */
+            background-color: #222222;
+            justify-content: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .btn-primary {
+            background-color: var(--bs-primary); /* Orange button */
+            border: none;
+            padding: 10px 20px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--bs-secondary); /* Pink on hover */
+            color: #fff;
+        }
+
+        .btn-close {
+            filter: invert(1) brightness(2); /* White close button for contrast */
+        }
+
+        /* Ensure the modal is centered and responsive */
+        .modal-dialog {
+            margin-top: 15vh;
+        }
+
+        /* Hover effect for the button (optional enhancement) */
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }

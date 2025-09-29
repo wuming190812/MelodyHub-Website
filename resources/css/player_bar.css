@@ -1,0 +1,102 @@
+/* Bottom Player Bar Styles */
+#player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #181818;
+    color: white;
+    padding: 10px;
+    display: none;
+    align-items: center;
+    z-index: 1050;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+}
+
+#player-bar .song-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+#player-bar .song-info img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+#player-bar .song-title {
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+#player-bar .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex: 1;
+}
+#player-bar .controls button {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+#player-bar .controls button:hover {
+    color: #fff;
+}
+
+#player-bar .progress {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#player-bar .progress-bar {
+    flex: 1;
+    height: 4px;
+    background-color: #404040;
+    position: relative;
+    cursor: pointer;
+}
+#player-bar .progress-fill {
+    height: 100%;
+    background-color: #1db954;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+#player-bar .time {
+    font-size: 12px;
+    color: #b3b3b3;
+    min-width: 40px;
+    text-align: center;
+}
+
+#player-bar .extra-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    flex: 1;
+}
+#player-bar .extra-controls button {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+#player-bar .extra-controls button:hover {
+    color: #fff;
+}
+
+#youtube-player {
+    display: none; /* Hidden player for audio control */
+}

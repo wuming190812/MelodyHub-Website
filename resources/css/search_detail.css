@@ -1,0 +1,227 @@
+/* Search Header */
+        .search-header {
+            background: linear-gradient(135deg, var(--bs-gray), var(--bs-dark));
+            padding: 2rem 0;
+        }
+        .search-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .search-container form {
+            display: flex;
+            gap: 10px;
+        }
+        .search-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--bs-primary);
+            color: white;
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+        }
+        .search-input:focus {
+            box-shadow: 0 0 5px var(--bs-primary);
+            border-color: var(--bs-primary);
+        }
+        .search-btn {
+            background: var(--bs-primary);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .search-btn:hover {
+            background: var(--bs-secondary);
+        }
+
+        /* Results Info */
+        .results-count {
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+            color: #aaa;
+        }
+        .results-count .badge {
+            background: var(--bs-primary);
+            border-radius: 12px;
+            padding: 0.3rem 0.8rem;
+        }
+
+        /* Tabs Navigation */
+        .nav-tabs {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1.5rem;
+        }
+        .nav-tabs .nav-link {
+            color: #aaa;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link:hover {
+            color: var(--bs-primary);
+        }
+        .nav-tabs .nav-link.active {
+            color: var(--bs-primary);
+            background: rgba(255, 126, 34, 0.1);
+            border-bottom: 2px solid var(--bs-primary);
+        }
+        .nav-tabs .badge {
+            background: var(--bs-primary);
+            border-radius: 12px;
+            padding: 0.2rem 0.6rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Song Table */
+        .song-table {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            color: white;
+        }
+        .song-table table {
+            margin-bottom: 0;
+        }
+        .song-table thead th {
+            background: rgba(255, 126, 34, 0.2);
+            border: none;
+            padding: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+        .song-table tbody tr {
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .song-table tbody tr:hover {
+            background: rgba(255, 126, 34, 0.1);
+            transform: translateX(5px);
+        }
+        .song-table tbody td {
+            padding: 1rem;
+            vertical-align: middle;
+            border: none;
+        }
+        .song-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .song-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .song-details h6 {
+            margin: 0;
+            font-weight: 500;
+            color: white;
+        }
+        .song-details .artist {
+            color: var(--bs-primary);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .play-btn {
+            background: rgba(255, 126, 34, 0.2);
+            border: 1px solid var(--bs-primary);
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            color: var(--bs-primary);
+            transition: all 0.3s ease;
+        }
+        .play-btn:hover {
+            background: var(--bs-primary);
+            color: white;
+        }
+        .play-btn i {
+            color: white;
+            font-size: 13px;
+        }
+
+        /* Artist and Playlist Cards */
+        .result-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+        }
+        .result-card:hover {
+            background: rgba(255, 126, 34, 0.1);
+            transform: translateX(5px);
+        }
+        .artist-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .playlist-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 126, 34, 0.2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--bs-primary);
+        }
+        .result-info h5 {
+            margin: 0;
+            font-weight: 500;
+            color: white;
+        }
+        .result-info .text-muted {
+            color: #aaa;
+            font-size: 0.85rem;
+        }
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--bs-primary);
+            color: var(--bs-primary);
+            background: transparent;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        .action-btn:hover {
+            background: var(--bs-primary);
+            color: var(--bs-dark);
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 2rem;
+            color: #aaa;
+        }
+        .no-results i {
+            font-size: 2.5rem;
+            color: var(--bs-primary);
+            margin-bottom: 1rem;
+        }
+        .no-results h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
